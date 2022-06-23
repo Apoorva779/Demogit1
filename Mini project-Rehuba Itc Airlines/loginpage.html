@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>https://www.rehubaitcairlines.com</title>
+    <style>
+        body{
+            background-image:url('img1.jfif');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .fit
+        {
+            color: rgb(41, 92, 92);
+        }
+        .form
+        {
+            color: black;
+        }
+        h1{
+            font-size: 50px;
+            text-decoration: solid;
+            color: rgb(152, 10, 10);
+           
+        }
+        label{
+            width: 8%;
+            display: inline-block;
+        }
+        button{
+            width: 12%;
+            height: 40px;
+            margin: 20px;
+            border-radius: 60px;
+            background-color:rgb(234, 81, 81);
+            font-size: 17px;
+            text-align: center;
+            position: relative;
+            left: 60px;
+            padding: 9px;
+           
+        }
+        a:link{
+            padding-left: 90px;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+
+        }
+        a:hover
+    {
+    color: aqua;
+    }
+
+        input{
+            border-radius:60px;
+            text-align:center;
+            width:17%;
+            padding:12px;
+            background-color:rgb(175, 179, 182);
+}
+        h2{
+            padding-left: 90px;
+        }
+        ::placeholder{
+            font-size: larger;
+            font-style:normal;
+            color: rgb(179, 112, 148);
+        }
+        .main{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h3{
+            padding-left: 90px;
+        }
+        footer{
+            /* text-align: right; */
+            padding: 12px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            right: auto;
+            float: rig;
+        }
+    </style>
+</head>
+<body>
+    <div class="fit">
+        <!-- <p>Welcome</p> -->
+      <h1> REHUBA ITC Airlines</h1>
+      <div class="form">
+          <h2>Login Form</h2>
+          <form name="f1" action=""onsubmit="validate();">
+             <!---  <label for="name" ><b>UserName </b></label> -->
+              <img src="user.png" width="30px" height="30px">
+              <input type="text" id="username" name="username"pattern="[a-z,A-Z,0-9]{8,16}" title="username should consist of combination of upper & lower case letters : (min & max range :8-16)" placeholder="Username"required> <br> <br>
+             <!--  <label for="password"><b>Password</b></label> -->
+              <img src="password.png" width="30px" height="30px">
+              <input type="password" id="password" name="Password" pattern="[a-z,A-Z,0-9]{8,16}" title = "Password should consist of combination of upper & lower case letters and numerical (min & max range :8-16)" placeholder="Password"required><br>
+             
+                 <button type="submit"id="login" class="btn btn-warning text-white">
+                <b><font background-color:red><center>Submit</center><a href="mainpage.html"</font></b></a>
+                </button><br>
+
+              <b><h3>Not a member?</h3></b>
+              <a href="Register.html"><b>Register here</b></a>
+
+             
+          </form>
+      </div>
+    </div>
+   
+</body>
+<!-- <script language="javascript">
+    function validate()
+    {
+        var user=document.f1.username.value;
+        alert("welcome");
+        alert(user);
+        alert("You are Successfully login to the REHUBA Airline");
+        alert("Click on navigate button for more information..")
+    }
+</script> -->
+<!-- <footer>
+    <a href="mainpage.html">
+        <img src="leftarr.png" width="40" height="40">
+    </a>
+</footer> -->
+
+</html>

@@ -1,0 +1,211 @@
+<html lang="en">
+<head>
+    <title>https://www.rehubaitcairlines.com/Register</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=2.0">
+<style>
+
+    #head
+    {
+        background-color:#00b8d8;
+    }
+    .log
+    {  
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+           
+
+    }
+        ul{
+            list-style: none;
+        }
+        li
+        {
+            display: inline;
+            margin: 12px;
+            padding: 15px;
+            font-family: 'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(255, 0, 123);
+            transition: .7s;
+        }
+        h1
+        {
+            color: white;
+            font-family: 'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;
+            font-size: 25px;
+        }
+        h2
+        {
+            color: yellow;
+        }
+        button
+        {
+            padding: 8px;
+            border-radius: 80px;
+            border: none;
+            background-color: #00b8d8;
+            cursor: pointer;
+            width:auto;
+           
+        }
+        button:hover
+        {
+            background-color: rgb(5, 62, 92);
+           
+        }
+#opt1
+    {padding:8px;
+    border-radius:100px;
+    text-align:center;
+    width:20%;
+    background-color:#00b8d8;
+    border:none;}
+    #opt2
+    {padding:8px;
+    border-radius:100px;
+    text-align:center;
+    width:20%;
+    background-color:#00b8d8;
+    border:none;}
+body
+    {background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)), url('https://th.bing.com/th/id/R.ff78826d2a94639d0ba40d36401033ef?rik=W1a9J7VeZdmDeg&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fc%2fe%2fe%2f1523513-airplane-wallpapers-1920x1080-4k.jpg&ehk=78%2fjsHbvmV2%2fdxBW83PjtbUGotf866pjj2JS%2fhZYe9M%3d&risl=&pid=ImgRaw&r=0');
+    background-repeat: repeat;
+    background-size:cover;
+    font-family:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;
+    padding: 0px 0px;
+   
+    }
+.container
+    {
+     position: relative;
+    width:100%;
+    max-width: 750px;
+    box-shadow: 0 10px 10px rgba(0,0,0,1.5);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.212);
+    }
+.container .form
+{
+    padding: 30px;
+}
+input
+{
+    border-radius:4px;
+    text-align:center;
+    width:30%;
+    padding:8px;
+    border-color:rgb(165, 164, 164);
+    font-weight: bold;
+    background-color: rgba(247, 244, 244, 0.676);
+}
+
+label{
+    color: black;
+    font-weight: bold;
+}
+
+input[type="checkbox"]
+{
+    height:20px;
+    width:30px;
+    border-radius:5px;
+}
+
+</style>
+</head>
+<form name="f1" action=""onsubmit="validate();"></form>
+<body> <center>
+    <div class="log">
+          <h1>REHUBA ITC AIRLINES</h1>
+        <ul>
+            <font color="white"></font>
+            <li id="btn"><a href="mainpage.html">HOME</a></li>
+            <li><a href="details.html">ABOUT US</a></li>
+            </font>
+        </ul>
+    </div>
+        <font face="arial" color="white">
+        <center>
+            <h2 id="head">Registration form</h2>
+    Complete all the fields to register.</center>
+        <br>
+        <div class="container">
+            <div class="form">
+                <div class="input">
+                    <form name="f1" action=""onsubmit="validate();">          
+            <label>First name:</label><br>
+            <input id="first" type="text"name="fname"pattern="[A-Z][a-z]*"title="*Please enter First Name should follow First character uppercase and reamining lowercase letters" placeholder="Enter first name"name="fname" required><br>
+            <label>Last name:</label><br>
+            <input id="last" type="text"name="lname"pattern="[A-Z][a-z]*" placeholder="Enter last name" title="*Please enter Last Name should follow First character uppercase and reamining lowercase letters" name="lname" required > <br><br>
+                <select id="opt1" required>
+                    <option type="input">Gender</option> 
+                    <option>Male</option> 
+                    <option>Female</option> 
+                    <option>Others</option> 
+                    </select><br><br>
+            <label>Mobile:</label>
+            <input id="mob" type="text"name="Mobile"pattern="[0-9]{10}" placeholder="10 digits only" title="*Enter 10 digits mobile number." maxlength="10"  required>
+            <label>Email:</label>
+            <input id="email" type="email" placeholder="Enter email" title="*Enter email." name="email" required><br><br></div>
+            <label>Aadhar number:</label><br>
+            <input id="adhar" type="text" name="Aadhar"pattern="[0-9]{12}" placeholder="12 digits only" title="*Enter 12 digits Aadhar number." maxlength="12" required> <br><br>
+                <select id="opt2" class="button" required>
+                    <option type="input">Country</option> 
+                    <option>India</option> 
+                    <option>America</option> 
+                    <option>England</option> 
+                    <option>China</option>
+                    <option>Australia</option> 
+                    <option>Europe</option> 
+                    <option>Italy</option> 
+                    <option>Pakisthan</option> 
+                    <option>Russia</option> 
+                </select><br><br>
+               <label>Username:</label>
+            <input id="uname" type="text" placeholder="set username" pattern="[a-z,A-Z,0-9]{8,16}" title="username should consist of combination of upper & lower case letters : (min & max range :8-16)" name="username" required> 
+            <label>Password:</label>
+            <input id="pass" type="password" placeholder="Password" pattern="[a-z,A-Z,0-9]{8,16}" title="Password should consist of combination of upper & lower case letters and numerical (min & max range :8-16)"  name="password" required> 
+          <!-- <input type="password" placeholder="Confirm password" title="*Must be same as password field." name="confirm password" required><br><br>-->
+            <label for="input"><br><br><br>
+                <input id="check" type="checkbox" required>  I accept all the terms and conditions.</label><br><br>
+                <button type="submit" id="login" class="btn btn-warning text-white">
+                    <b><font background-color:blue><center>Submit</center><a href="mainpage.html"</font></b></a>
+                    </button><br>
+    
+                <!-- <button><a href="mainpage.html"><big>Register</big></a></button><br><br><hr>
+        <button>
+            <a href="loginpage.html"> <big>Back to Login</big></a>
+        </button><br></center> -->
+        <!-- <footer>
+            <a href="loginpage.html">
+                <img src="leftarr.png" width="40" height="40">
+            </a>
+           </footer> -->
+    </form>
+        </div><br>
+    </div>
+    </div>
+        </font>
+       </body>
+       <!-- <script language="javascript">
+        function validate()
+        {
+         
+            alert("   Welcome....");
+         
+            alert("YOUR REGISTRATION IS SUCESSUFULLY COMPLETED....!");
+
+            alert("Click on navigate button to login..")
+        }
+   
+    </script> -->
+   
+</html>
